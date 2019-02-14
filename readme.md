@@ -194,3 +194,7 @@ class OrchestraTest extends TestCase
     </testsuite>
 </phpunit>
 ```
+
+----
+**Do not use the *global* `phpunit`.**  Use `./vendor/bin/phpunit`
+----
