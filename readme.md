@@ -157,13 +157,13 @@ Replace `PHPUnit\Framework\TestCase` with `Orchestra\Testbench\TestCase` in your
 
 namespace Poing\Eviternity\Tests;
 
--use PHPUnit\Framework\TestCase;
-+use Orchestra\Testbench\TestCase;
+- use PHPUnit\Framework\TestCase;
++ use Orchestra\Testbench\TestCase;
 
 class ...
 ```
 
-
+##### `tests/OrchestraTest.php`
 
 ```
 <?php
@@ -181,4 +181,16 @@ class OrchestraTest extends TestCase
     }
 
 }
+```
+
+##### Add the test to `phpunit.xml`
+
+```diff
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit>
+    <testsuite name="Basic Tests" >
+        <file>./tests/BasicTest.php</file>
++       <file>./tests/OrchestraTest.php</file>
+    </testsuite>
+</phpunit>
 ```
