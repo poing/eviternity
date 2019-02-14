@@ -129,3 +129,14 @@ class BasicTest extends TestCase
     └── BasicTest.php
 ```
 
+```shell
+poing@phpdev:/var/www/html/zzzz/packages/poing/eviternity$ ./vendor/bin/phpunit 
+PHPUnit 7.5.4 by Sebastian Bergmann and contributors.
+
+.                                                                   1 / 1 (100%)
+
+Time: 157 ms, Memory: 4.00MB
+
+OK (1 test, 1 assertion)
+```
+
