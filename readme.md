@@ -84,13 +84,48 @@ To `autoload` the package and test files, we'll add the following.
 
 *I use the full `namespace` for my tests.**
 
+#### Our First Test
 
+Our *first test* will use `phpunit`, just to *confirm* basic testing works.
+
+##### `tests/BasicTest.php`
+
+```php
+<?php
+
+namespace Poing\Eviternity\Tests;
+
+use PHPUnit\Framework\TestCase;
+
+class BasicTest extends TestCase
+{
+
+    public function testBasic()
+    {
+        $this->assertTrue(true);
+    }
+
+}
+```
+
+##### `phpunit.xml`
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit>
+    <testsuite name="Basic Test" >
+        <file>./tests/BasicTest.php</file>
+    </testsuite>
+</phpunit>
+```
 
 ```
-#mkdir -p src/Eviternity tests
 .
 ├── composer.json
+├── phpunit.xml
 ├── src
 │   └── Eviternity
 └── tests
+    └── BasicTest.php
 ```
+
