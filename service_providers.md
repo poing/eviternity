@@ -18,12 +18,11 @@ class EviternityServiceProvider extends ServiceProvider
 
 ```diff
 {
-    "name": "poing/eviternity",
-    "require": {}
-    "require": {},
-    "require-dev": {
-        "orchestra/testbench": "3.7"
-    },
+  "name": "poing/eviternity",
+  "require": {},
+  "require-dev": {
+    "orchestra/testbench": "3.7"
+  },
   "autoload": {
     "psr-4": {
       "Poing\\Eviternity\\": "src/"
