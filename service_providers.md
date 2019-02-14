@@ -15,3 +15,33 @@ class EviternityServiceProvider extends ServiceProvider
 {
     ...
 ```
+
+```diff
+{
+    "name": "poing/eviternity",
+    "require": {}
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "3.7"
+    },
+  "autoload": {
+    "psr-4": {
+      "Poing\\Eviternity\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Poing\\Eviternity\\Tests\\": "tests/"
+    }
+-  }
++  },
++  "extra": {
++    "laravel": {
++      "providers": [
++        "Poing\\Eviternity\\EviternityServiceProvider"
++      ]
++    }
++  }
+}
+```
+
