@@ -47,10 +47,29 @@ mv database/migrations/*duration* src/Eviternity/database/migrations/.
 ```
 
 
-```shell
-cd src/Eviternity/
-mkdir -p Models database/migrations
+----
+
+```diff
+<?php
+
+- namespace App;
++ namespace Poing\Eviternity\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Duration extends Model
+{
+-    //
++    public static function check()
++    {
++        return true;
++    }
+}
 ```
+
+
+----
+
 
 
 ```shell
