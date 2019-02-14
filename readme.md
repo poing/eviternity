@@ -194,9 +194,18 @@ class OrchestraTest extends TestCase
     </testsuite>
 </phpunit>
 ```
+##### Run the Test
 
-----
-**Do not use the *global* `phpunit`.**  
-Use `./vendor/bin/phpunit` from this point forward.
+**Do not use the *global* `phpunit`.  It will fail!**  *It needs the PSR-4 auto-loaded namespace information.*
+ 
+Use `./vendor/bin/phpunit` from this point forward.  *To avoid having to rewrite your code.*
 
-----
+```shell
+PHPUnit 7.5.4 by Sebastian Bergmann and contributors.
+
+..                                                                  2 / 2 (100%)
+
+Time: 556 ms, Memory: 10.00MB
+
+OK (2 tests, 2 assertions)
+```
