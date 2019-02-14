@@ -82,7 +82,7 @@ To `autoload` the package and test files, we'll add the following.
 }
 ```
 
-*I use the full `namespace` for my tests.**
+*I use the full `namespace` for my tests.*
 
 #### Our First Test
 
@@ -148,3 +148,37 @@ Time: 157 ms, Memory: 4.00MB
 OK (1 test, 1 assertion)
 ```
 
+#### Using `orchestra/testbench`
+
+Replace `PHPUnit\Framework\TestCase` with `Orchestra\Testbench\TestCase` in your tests.
+
+```diff
+<?php
+
+namespace Poing\Eviternity\Tests;
+
+-use PHPUnit\Framework\TestCase;
++use Orchestra\Testbench\TestCase;
+
+class ...
+```
+
+
+
+```
+<?php
+
+namespace Poing\Eviternity\Tests;
+
+use Orchestra\Testbench\TestCase;
+
+class OrchestraTest extends TestCase
+{
+
+    public function testBasic()
+    {
+        $this->assertTrue(true);
+    }
+
+}
+```
