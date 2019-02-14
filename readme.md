@@ -2,6 +2,28 @@
 composer init
 ```
 
+```
+{
+    "name": "vendor/name",
+    "require": {}
+}
+```
+
+```
+composer require --dev --prefer-dist orchestra/testbench 3.7
+```
+
+```diff
+{
+    "name": "vendor/name",
+-    "require": {}
++    "require": {},
++    "require-dev": {
++        "orchestra/testbench": "3.7"
++    }
+}
+```
+
 ```diff
 // composer.json
 -  "require": {}
