@@ -1,10 +1,19 @@
-```bash
+```shell
 mkdir -p poing/eviternity
 cd poing/eviternity
+composer init
+```
+
+```shell
+mkdir -p src/Eviternity tests
 ```
 
 ```
-composer init
+.
+├── composer.json
+├── src
+│   └── Eviternity
+└── tests
 ```
 
 ```
