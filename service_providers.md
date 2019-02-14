@@ -24,9 +24,9 @@ php artisan make:model Duration -m
 mv app/Duration.php src/Eviternity/Models/.
 mv app/Everlasting.php src/Eviternity/Models/.
 
-mv database/migrations/*everlastings_table.php src/Eviternity/database/m
+mv database/migrations/*everlasting* src/Eviternity/database/m
 igrations/.
-mv database/migrations/*durations_table.php src/Eviternity/database/m
+mv database/migrations/*duration* src/Eviternity/database/m
 igrations/.
 ```
 
