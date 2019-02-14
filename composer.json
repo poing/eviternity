@@ -1,0 +1,19 @@
+{
+    "name": "poing/eviternity",
+    "description": "Testing Laravel Models with Orchestra Testbench",
+    "type": "library",
+    "require-dev": {
+        "orchestra/testbench": "3.7",
+        "laravel/framework": "5.7",
+        "phpunit/phpunit": "7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brian LaVallee",
+            "email": "brian.lavallee@invite-comm.jp"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
