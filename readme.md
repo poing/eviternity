@@ -1,6 +1,6 @@
 #### Create a Package
 
-The `<vendor>/<name>` of this project will be `poing/eviternity`.  *Use your own package name.*
+The `<vendor>/<name>` of this project will be `poing/eviternity`.  *Use your own package vendor/name.*
 
 ```shell
 mkdir -p poing/eviternity
@@ -18,9 +18,13 @@ Skipping through the settings, you should find *at least* the following in your 
 
 #### Add `orchestra/testbench`
 
-```
+Since Laravel 5.7 is *currently* available, we'll use version 3.7 of orchestra/testbench.  See the [version compatibility](https://github.com/orchestral/testbench#version-compatibility) for other Laravel versions.
+
+```shell
 composer require --dev --prefer-dist orchestra/testbench 3.7
 ```
+
+The above command will add the `require-dev` section, *as shown below*.
 
 ```diff
 {
@@ -33,9 +37,16 @@ composer require --dev --prefer-dist orchestra/testbench 3.7
 }
 ```
 
+#### Create **PSR-4** Paths
+
+We'll create the `src/Eviternity` directory for the package files, and `tests` for our testing.
+
 ```shell
 mkdir -p src/Eviternity tests
 ```
+
+You should have the following directory structure.
+
 
 ```
 .
@@ -44,6 +55,10 @@ mkdir -p src/Eviternity tests
 │   └── Eviternity
 └── tests
 ```
+
+#### **PSR-4** Autoload
+
+To `autoload` the package and test files, we'll add the following.
 
 ```diff
 {
@@ -66,6 +81,10 @@ mkdir -p src/Eviternity tests
 +  }
 }
 ```
+
+*I use the full `namespace` for my tests.**
+
+
 
 ```
 #mkdir -p src/Eviternity tests
