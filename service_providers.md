@@ -60,7 +60,10 @@ use Illuminate\Database\Eloquent\Model;
 class Duration extends Model
 {
 -    //
-+    public static function check()
++    /**
++     * Used to test access to this class
++     */
++    public static function probe()
 +    {
 +        return true;
 +    }
