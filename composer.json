@@ -6,12 +6,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Poing\\": "src/"
+            "Poing\\Eviternity\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Poing\\Eviternity\\Tests\\": "tests/"
         }
     },
     "extra": {

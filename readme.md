@@ -39,10 +39,10 @@ The above command will add the `require-dev` section, *as shown below*.
 
 #### Create **PSR-4** Paths
 
-We'll create the `src/Eviternity` directory for the package files, and `tests` for our testing.
+We'll create the `src` directory for the package files, and `tests` for our testing.
 
 ```shell
-mkdir -p src/Eviternity tests
+mkdir -p src tests
 ```
 
 You should have the following directory structure.
@@ -52,7 +52,6 @@ You should have the following directory structure.
 .
 ├── composer.json
 ├── src
-│   └── Eviternity
 └── tests
 ```
 
@@ -71,7 +70,7 @@ To `autoload` the package and test files, we'll add the following.
 +    },
 +  "autoload": {
 +    "psr-4": {
-+      "Poing\\": "src/"
++      "Poing\\Eviternity\\Poing\\": "src/"
 +    }
 +  },
 +  "autoload-dev": {
