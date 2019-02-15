@@ -70,7 +70,7 @@ To `autoload` the package and test files, we'll add the following.
 +    },
 +  "autoload": {
 +    "psr-4": {
-+      "Poing\\Eviternity\\Poing\\": "src/"
++      "Poing\\Eviternity\\": "src/"
 +    }
 +  },
 +  "autoload-dev": {
@@ -81,7 +81,7 @@ To `autoload` the package and test files, we'll add the following.
 }
 ```
 
-*I use the full `namespace` for my tests.*
+*I use the full `namespace` for my tests.  You could just call it `Tests\\`*
 
 #### Our First Test
 
@@ -123,7 +123,6 @@ class BasicTest extends TestCase
 ├── composer.json
 ├── phpunit.xml
 ├── src
-│   └── Eviternity
 └── tests
     └── BasicTest.php
 ```

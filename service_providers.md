@@ -7,10 +7,9 @@ mkdir -p src/Eviternity/Models src/Eviternity/database/migrations
 ├── composer.json
 ├── phpunit.xml
 ├── src
-│   └── Eviternity
-│       ├── database
-│       │   └── migrations
-│       └── Models
+│   ├── database
+│   │   └── migrations
+│   └── Models
 └── tests
     ├── BasicTest.php
     └── OrchestraTest.php 
@@ -21,11 +20,11 @@ cd laravel
 php artisan make:model Everlasting -m
 php artisan make:model Duration -m
 
-mv app/Duration.php src/Eviternity/Models/.
-mv app/Everlasting.php src/Eviternity/Models/.
+mv app/Duration.php src/Models/.
+mv app/Everlasting.php src/Models/.
 
-mv database/migrations/*everlasting* src/Eviternity/database/migrations/.
-mv database/migrations/*duration* src/Eviternity/database/migrations/.
+mv database/migrations/*everlasting* src/database/migrations/.
+mv database/migrations/*duration* src/database/migrations/.
 ```
 
 ```
@@ -33,14 +32,13 @@ mv database/migrations/*duration* src/Eviternity/database/migrations/.
 ├── composer.json
 ├── phpunit.xml
 ├── src
-│   └── Eviternity
-│       ├── database
-│       │   └── migrations
-│       │       ├── 0000_00_00_000000_create_durations_table.php
-│       │       └── 0000_00_00_000000_create_everlastings_table.php
-│       └── Models
-│           ├── Duration.php
-│           └── Everlasting.php
+│   ├── database
+│   │   └── migrations
+│   │       ├── 0000_00_00_000000_create_durations_table.php
+│   │       └── 0000_00_00_000000_create_everlastings_table.php
+│   └── Models
+│       ├── Duration.php
+│       └── Everlasting.php
 └── tests
     ├── BasicTest.php
     └── OrchestraTest.php
