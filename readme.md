@@ -71,7 +71,7 @@ To `autoload` the package and test files, we'll add the following.
 +    },
 +  "autoload": {
 +    "psr-4": {
-+      "Poing\\Eviternity\\": "src/"
++      "Poing\\": "src/"
 +    }
 +  },
 +  "autoload-dev": {

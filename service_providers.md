@@ -102,7 +102,7 @@ class EviternityServiceProvider extends ServiceProvider
   },
   "autoload": {
     "psr-4": {
-      "Poing\\Eviternity\\": "src/"
+      "Poing\\": "src/"
     }
   },
   "autoload-dev": {
