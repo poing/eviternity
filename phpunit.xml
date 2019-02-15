@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit>
+    <testsuite name="Basic Tests" >
+        <file>./tests/BasicTest.php</file>
+        <file>./tests/OrchestraTest.php</file>
+        <directory>./tests/Models</directory>
+    </testsuite>
+</phpunit>

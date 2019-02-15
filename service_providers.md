@@ -1,5 +1,5 @@
 ```shell
-mkdir -p src/Eviternity/Models src/Eviternity/database/migrations
+mkdir -p src/Models src/database/migrations
 ```
 
 ```
@@ -75,7 +75,7 @@ class Duration extends Model
 
 ```shell
 php artisan make:provider EviternityServiceProvider
-mv app/Providers/EviternityServiceProvider.php src/Eviternity/.
+mv app/Providers/EviternityServiceProvider.php src/.
 ```
 
 ```diff
@@ -100,7 +100,7 @@ class EviternityServiceProvider extends ServiceProvider
   },
   "autoload": {
     "psr-4": {
-      "Poing\\": "src/"
+      "Poing\\Eviternity\\": "src/"
     }
   },
   "autoload-dev": {
