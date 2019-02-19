@@ -92,6 +92,18 @@ class DurationTest extends TestCase
     ...
 ```
 
+##### Run the Test
+
+```shell
+PHPUnit 7.5.4 by Sebastian Bergmann and contributors.
+
+.....                                                               5 / 5 (100%)
+
+Time: 1.01 seconds, Memory: 16.00MB
+
+OK (5 tests, 6 assertions)
+```
+
 *that's all, hope it helps!*
 
 
