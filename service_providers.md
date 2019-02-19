@@ -156,6 +156,8 @@ There are three `3` tasks necessary to use `orchestra/testbench` in our tests.
 
 ##### Setting Up the Database for Testing
 
+We'll use `sqlite` for our testing.
+
 ```diff
 <?php
 
@@ -178,3 +180,48 @@ class DurationTest extends TestCase
 +    }
     ...
 ``` 
+
+##### Running the Migrations
+
+```diff
+<?php
+
+namespace Poing\Eviternity\Tests\Models;
+
+use Orchestra\Testbench\TestCase;
+use Poing\Eviternity\Models\Duration as Duration;
+
+class DurationTest extends TestCase
+{
+
++    protected function setUp(): void
++    {
++        parent::setUp();
++        $this->artisan('migrate');
++    }
+    ...
+```
+
+##### Loading the Service Provider
+
+```diff
+<?php
+
+namespace Poing\Eviternity\Tests\Models;
+
+use Orchestra\Testbench\TestCase;
+use Poing\Eviternity\Models\Duration as Duration;
+
+class DurationTest extends TestCase
+{
+
++    protected function getPackageProviders($app)
++    {
++        return [
++            \Poing\Eviternity\EviternityServiceProvider::class,
++        ];
++    }
+    ...
+```
+
+
