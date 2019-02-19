@@ -62,23 +62,24 @@ class DurationTest extends TestCase
         $this->assertTrue(Duration::probe());
     }
 
-
-    public function testSimpleCreate()
+/*
+    public function testSimpleA()
     {
         $test = new \Poing\Eviternity\Models\Duration;
         $test->alpha = 100;
         $this->assertTrue($test->save());
     }
+*/
 
-    public function testSimpleRead()
+    public function testSimpleDB()
     {
-        $test = new \Poing\Eviternity\Models\Duration;
-        $test->alpha = 50;
-        $test->save();
+        $value = 1234;
+        $data = new \Poing\Eviternity\Models\Duration;
+        $data->alpha = $value;
+        $this->assertTrue($data->save());
 
-        $test = \Poing\Eviternity\Models\Duration::first();
-        $this->assertEquals(50, $test->alpha);
-        //$this->assertTrue(false);
+        $verify = \Poing\Eviternity\Models\Duration::first();
+        $this->assertEquals($value, $verify->alpha);
     }
 
 
