@@ -92,5 +92,6 @@ class DurationTest extends TestCase
     ...
 ```
 
+*that's all, hope it helps!*
 
 
