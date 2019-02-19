@@ -15,6 +15,7 @@ class CreateEverlastingsTable extends Migration
     {
         Schema::create('everlastings', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('alpha');
             $table->timestamps();
         });
     }

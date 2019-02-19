@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Duration extends Model
 {
+
+    protected $fillable = [
+        'alpha',
+    ];
+
     /**
      * Used to test access to this class
      */

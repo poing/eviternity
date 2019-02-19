@@ -2,7 +2,8 @@
     "name": "poing/eviternity",
     "require": {},
     "require-dev": {
-        "orchestra/testbench": "3.7"
+        "orchestra/testbench": "3.7",
+        "mockery/mockery": "^1.2"
     },
     "autoload": {
         "psr-4": {
