@@ -63,6 +63,10 @@ Psy Shell v0.9.9 (PHP 7.2.15-1+ubuntu18.04.1+deb.sury.org+1 — cli) by Justin H
 => 111
 ```
 
+#### Adding the Test
+
+Just like we did with tinker, let's add our test.
+
 
 ```diff
 <?php
