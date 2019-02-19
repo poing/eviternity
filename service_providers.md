@@ -183,6 +183,8 @@ class DurationTest extends TestCase
 
 ##### Running the Migrations
 
+Will call `setUp()` to *initialize* the `orchestra/testbench` and run `artisan migrate`.
+
 ```diff
 <?php
 
@@ -202,7 +204,9 @@ class DurationTest extends TestCase
     ...
 ```
 
-##### Loading the Service Provider
+##### Loading the Service Providers
+
+We'll add our Service Provider and any others necessary for the package to run properly.
 
 ```diff
 <?php
@@ -224,4 +228,6 @@ class DurationTest extends TestCase
     ...
 ```
 
+#### Now we're ready to test the Model
 
+[next](model_setup.md)
