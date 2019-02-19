@@ -146,3 +146,35 @@ class EviternityServiceProvider extends ServiceProvider
 ```
 
 
+#### Using `orchestra/testbench` in our test.
+
+There are three `3` tasks necessary to use `orchestra/testbench` in our tests.
+
+1. Set up the database used for testing
+1. Run the migrations 
+1. Load the Laravel Service Provider
+
+##### Setting Up the Database for Testing
+
+```diff
+<?php
+
+namespace Poing\Eviternity\Tests\Models;
+
+use Orchestra\Testbench\TestCase;
+use Poing\Eviternity\Models\Duration as Duration;
+
+class DurationTest extends TestCase
+{
+
++    protected function getEnvironmentSetUp($app)
++    {
++        $app['config']->set('database.default', 'testbench');
++        $app['config']->set('database.connections.testbench', [
++            'driver'   => 'sqlite',
++            'database' => ':memory:',
++            'prefix'   => '',
++        ]);
++    }
+    ...
+``` 
